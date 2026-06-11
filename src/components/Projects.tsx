@@ -41,7 +41,7 @@ export default function Projects() {
       title: "IN THE LIFE OF A...",
       role: "Creator, Producer & Director",
       description: "A documentary series exploring professions and lifestyles through immersive storytelling. Captures the human grit of ordinary Zimbabweans chasing extraordinary dreams.",
-      image: "/src/assets/images/regenerated_image_1781165402857.jpg",
+      image: "/src/assets/images/african_savanna_landscape_1781181875623.png",
       year: "2023",
       duration: "10-part Docuseries",
       genre: "Documentary / Human Interest",

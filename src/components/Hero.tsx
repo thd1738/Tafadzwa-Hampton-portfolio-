@@ -80,7 +80,7 @@ export default function Hero({ onScrollTo }: HeroProps) {
             {/* High contrast B&W Portrait of Hampton Dube */}
             <div className="relative w-full h-full overflow-hidden">
               <motion.img
-                src="/src/assets/images/regenerated_image_1781165036067.jpg"
+                src="/src/assets/images/regenerated_image_1781181974192.jpg"
                 alt="Tafadzwa Hampton Dube Studio Portrait"
                 referrerPolicy="no-referrer"
                 initial={{ scale: 1.15 }}
