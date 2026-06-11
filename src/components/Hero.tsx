@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import { ArrowDown, Flame, Youtube, Facebook, Instagram, Linkedin, MessageSquare, Compass, Play } from "lucide-react";
 import Magnetic from "./Magnetic";
+import heroPortrait from "../assets/images/regenerated_image_1781181974192.jpg";
 
 interface HeroProps {
   onScrollTo: (sectionId: string) => void;
@@ -80,7 +81,7 @@ export default function Hero({ onScrollTo }: HeroProps) {
             {/* High contrast B&W Portrait of Hampton Dube */}
             <div className="relative w-full h-full overflow-hidden">
               <motion.img
-                src="/src/assets/images/regenerated_image_1781181974192.jpg"
+                src={heroPortrait}
                 alt="Tafadzwa Hampton Dube Studio Portrait"
                 referrerPolicy="no-referrer"
                 initial={{ scale: 1.15 }}
