@@ -1,0 +1,6 @@
+{
+  "name": "Tafadzwa Hampton Dube Portfolio",
+  "description": "A premium, minimalist cinematic portfolio website for Tafadzwa Hampton Dube, Zimbabwean director, writer, and producer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

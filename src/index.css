@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-serif: "Playfair Display", serif;
+}
+
+/* Base resets & styles matching minimal design */
+html, body {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: #ffffff;
+  color: #000000;
+  overflow-x: hidden;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fdfdfd;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #111111;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444444;
+}
+
+/* Outline text styles inspired by the reference Dymas Alfin design */
+.text-stroke {
+  -webkit-text-stroke: 1.5px #000000;
+  color: transparent;
+}
+
+@media (min-width: 768px) {
+  .text-stroke {
+    -webkit-text-stroke: 2.5px #000000;
+  }
+}
+
+.text-stroke-white {
+  -webkit-text-stroke: 1px #ffffff;
+  color: transparent;
+}
+
+/* Subtle cinematic lens flare, overlay and blur states */
+.canvas-bg {
+  background-color: #ffffff;
+}
+
+/* Base sleek grid layout divider lines */
+.sleek-grid-bg {
+  position: relative;
+}
+
+.sleek-grid-bg::before,
+.sleek-grid-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.03);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.sleek-grid-bg::before {
+  left: 25%;
+}
+
+.sleek-grid-bg::after {
+  right: 25%;
+}
+
+.text-justify-custom {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Premium micro shadows and buttons */
+.sleek-border {
+  border: 1px solid #111111;
+}
+
+.sleek-border-light {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.sleek-pill-btn {
+  border: 1px solid #000000;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sleek-pill-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
